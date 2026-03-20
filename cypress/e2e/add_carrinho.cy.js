@@ -11,7 +11,6 @@ describe('Adicionando produtos ao carrinho', () => {
     cy.contains('Home').should('be.visible');
 
     // Adicionando produtos ao carrinho usando o ID de cada item na página
-    //
     cy.get('[data-product-id="1"]').first().click({force: true});
     cy.contains('Added!').should('be.visible');
     
@@ -28,8 +27,8 @@ describe('Adicionando produtos ao carrinho', () => {
     //Validando o conteúdo presente na página e se os produtos foram adicionados.
     cy.url().should('include', '/view_cart');
 
-    //Validando os produtos listados
-    // Verificamos se a tabela contém os dois itens
+
+    // Verificamos se contém os dois itens
     cy.get('.cart_description').should('have.length', 2);
     cy.get('.cart_description').should('be.visible');
 

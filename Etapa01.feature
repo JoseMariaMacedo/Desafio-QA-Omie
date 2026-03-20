@@ -2,14 +2,14 @@
 
 Funcionalidade: Adicionar produtos ao carrinho
 
-    Cenário: Usuário adiciona um produto carrinho com sucesso
+    Cenário: Usuário adiciona um produto ao carrinho com sucesso
         Dado que o usuário acessa a página inicial do site
         E visualiza as categorias de produtos disponíveis (homem, mulher, infantil)
-        Quando o usuário selecionar uma categoria de produtos
-        E escolhar um produto da lista
-        E clicar no botão "Adicionar ao carrinho"
+        Quando o usuário seleciona uma categoria de produtos
+        E escolhe um produto da lista
+        E clica no botão "Adicionar ao carrinho"
         Então um pop-up deve ser exibido informando que o produto foi adicionado com sucesso
-        E o usuário deve ter a opção de "Ver carrinho" ou "Continuar Comprando"
+        E o usuário deve ter a opção de "Ver carrinho" ou "Continuar comprando"
 
     Cenário: Usuário visualiza os produtos no carrinho
         Dado que o usuário adicionou um ou mais produtos ao carrinho
